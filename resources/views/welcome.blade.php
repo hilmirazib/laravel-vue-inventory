@@ -480,10 +480,8 @@
                     <div class="container my-auto">
                         <div class="copyright text-center my-auto">
                             <span>copyright &copy;
-                                <script>
-                                    document.write(new Date().getFullYear());
-                                </script> - developed by
-                                <b><a href="https://www.easylearningbd.com/" target="_blank">Easy Learning</a></b>
+                                <span id="time-footer"></span> - developed by
+                                <b><a href="https://www.viainvitation.com/" target="_blank">Ruang Web Design</a></b>
                             </span>
                         </div>
                     </div>
@@ -512,6 +510,7 @@
           $("#topbar").css("display", "");
 
       }
+      document.getElementById('time-footer').innerHTML = new Date().getFullYear();
   </script>
     <script src="{{ asset('backend/vendor/jquery-easing/jquery.easing.min.js') }}"></script>
     <script src="{{ asset('backend/js/ruang-admin.min.js') }}"></script>
