@@ -3,7 +3,9 @@
 <template>
     <div>
         <div class="row">
-            <router-link to="/store-employee" class="btn btn-primary">Add Employee </router-link>
+            <div class="col-12 ms-1">
+                <router-link to="/store-employee" class="btn btn-primary">Add Employee </router-link>
+            </div>
         </div>
         <br>
         <input type="text" v-model="searchTerm" class="form-control" style="width: 300px;" placeholder="Search Here">
