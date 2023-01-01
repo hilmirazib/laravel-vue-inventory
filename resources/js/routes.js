@@ -25,6 +25,21 @@ let Product = require('./components/product/index.vue').default;
 let ProductStore = require('./components/product/create.vue').default;
 let ProductEdit = require('./components/product/edit.vue').default;
 
+//product
+let Expense = require('./components/expense/index.vue').default;
+let ExpenseStore = require('./components/expense/create.vue').default;
+let ExpenseEdit = require('./components/expense/edit.vue').default;
+
+//product
+let SallaryGiven = require('./components/salary/all_employee.vue').default;
+let SallaryIndex = require('./components/salary/index.vue').default;
+let SallaryPay = require('./components/salary/create.vue').default;
+let SallaryView = require('./components/salary/view.vue').default;
+let SallaryEdit = require('./components/salary/edit.vue').default;
+
+// Stock Component 
+let Stock = require('./components/product/stock.vue').default;
+let StockEdit = require('./components/product/edit-stock.vue').default;
 
 export const routes = [
   { path: '/', component: login, name:'/'},
@@ -52,5 +67,22 @@ export const routes = [
   { path: '/store-product', component: ProductStore, name:'store-product'},
   { path: '/product', component: Product, name:'product'},
   { path: '/edit-product/:id', component: ProductEdit, name:'edit-product'},
+
+  // Expense Routes
+  { path: '/store-expense', component: ExpenseStore, name:'store-expense'},
+  { path: '/expense', component: Expense, name:'expense'},
+  { path: '/edit-expense/:id', component: ExpenseEdit, name:'edit-expense'},
+
+  // Salary Routes
+  { path: '/given-salary', component: SallaryGiven, name:'given-salary'},
+  { path: '/pay-salary/:id', component: SallaryPay, name:'pay-salary'},
+
+  { path: '/salary', component: SallaryIndex, name:'salary'},
+  { path: '/view-salary/:id', component: SallaryView, name:'view-salary'},
+  { path: '/edit-salary/:id', component: SallaryEdit, name:'edit-salary'},
+
+  // Stock Routes
+  { path: '/stock', component: Stock, name:'stock'},
+  { path: '/edit-stock/:id', component: StockEdit, name:'edit-stock'},
 
 ]
