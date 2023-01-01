@@ -61,6 +61,14 @@ class Notification {
             timeout: 1000,
         }).show();
     }
+    cart_failed() {
+        new Noty({
+            type: 'error',
+            layout: 'topRight',
+            text: 'Product is empty!',
+            timeout: 1000,
+        }).show();
+    }
 
 
     cart_delete() {

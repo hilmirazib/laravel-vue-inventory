@@ -17,6 +17,9 @@ Vue.use(VueRouter)
  import Notification from './Helpers/Notification';
  window.Notification = Notification
 
+ import FormatNumber from './Helpers/FormatNumber';
+ window.FormatNumber = FormatNumber
+
  import Swal from 'sweetalert2';
  window.Swal = Swal;
 
